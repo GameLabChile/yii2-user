@@ -1,16 +1,16 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Gamelab project <http://github.com/gamelab>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
 /**
- * @var dektrium\user\models\Token $token
+ * @var gamelab\user\models\Token $token
  */
 ?>
 <?= Yii::t('user', 'Hello') ?>,

@@ -1,12 +1,12 @@
 <?php
 
-namespace dektrium\user\tests;
+namespace gamelab\user\tests;
 
 use Codeception\Specify;
-use dektrium\user\helpers\Password;
-use dektrium\user\models\RegistrationForm;
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use gamelab\user\helpers\Password;
+use gamelab\user\models\RegistrationForm;
+use gamelab\user\models\Token;
+use gamelab\user\models\User;
 use tests\codeception\fixtures\UserFixture;
 use yii\codeception\TestCase;
 

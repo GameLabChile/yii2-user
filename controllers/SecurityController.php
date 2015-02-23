@@ -1,19 +1,19 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace gamelab\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\Account;
-use dektrium\user\models\LoginForm;
+use gamelab\user\Finder;
+use gamelab\user\models\Account;
+use gamelab\user\models\LoginForm;
 use yii\base\Model;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -26,7 +26,7 @@ use yii\widgets\ActiveForm;
 /**
  * Controller that manages user authentication process.
  *
- * @property \dektrium\user\Module $module
+ * @property \gamelab\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */

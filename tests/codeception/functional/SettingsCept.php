@@ -1,6 +1,6 @@
 <?php
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use gamelab\user\models\Token;
+use gamelab\user\models\User;
 use tests\codeception\_pages\LoginPage;
 use tests\codeception\_pages\SettingsPage;
 use yii\helpers\Html;

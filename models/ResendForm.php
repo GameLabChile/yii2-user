@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace gamelab\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\Mailer;
+use gamelab\user\Finder;
+use gamelab\user\Mailer;
 use yii\base\Model;
 
 /**
@@ -31,7 +31,7 @@ class ResendForm extends Model
     /** @var User */
     private $_user;
 
-    /** @var \dektrium\user\Module */
+    /** @var \gamelab\user\Module */
     protected $module;
 
     /** @var Mailer */

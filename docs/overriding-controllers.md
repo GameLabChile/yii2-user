@@ -11,12 +11,12 @@ First of all you should create new controller under your own namespace (it is re
 and extend it from the controller you want to override.
 
 For example, if you want to override AdminController you should create `app\controllers\user\AdminController` and extend
-it from `dektrium\user\controllers\AdminController`:
+it from `gamelab\user\controllers\AdminController`:
 
 ```php
 namespace app\controllers\user;
 
-use dektrium\user\controllers\AdminController as BaseAdminController;
+use gamelab\user\controllers\AdminController as BaseAdminController;
 
 class AdminController extends BaseAdminController
 {
@@ -37,7 +37,7 @@ To let Yii2-user know about your controller, you should add it to the module's c
 'modules' => [
     ...
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'gamelab\user\Module',
         'controllerMap' => [
             'admin' => 'app\controllers\user\AdminController'
         ],

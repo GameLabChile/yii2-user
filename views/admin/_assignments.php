@@ -1,16 +1,16 @@
 <?php
 
 /* 
- * This file is part of the Dektrium project
+ * This file is part of the Gamelab project
  * 
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Gamelab project <http://github.com/gamelab>
  * 
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-use dektrium\rbac\widgets\Assignments;
-use dektrium\user\models\User;
+use gamelab\rbac\widgets\Assignments;
+use gamelab\user\models\User;
 use yii\web\View;
 
 /**
@@ -20,7 +20,7 @@ use yii\web\View;
 
 ?>
 
-<?php $this->beginContent('@dektrium/user/views/admin/update.php', ['user' => $user]) ?>
+<?php $this->beginContent('@gamelab/user/views/admin/update.php', ['user' => $user]) ?>
 
     <?= yii\bootstrap\Alert::widget([
         'options' => [

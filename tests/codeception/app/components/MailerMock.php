@@ -2,7 +2,7 @@
 
 namespace app\components;
 
-use dektrium\user\Mailer;
+use gamelab\user\Mailer;
 use tests\codeception\_support\MailHelper;
 
 class MailerMock extends Mailer

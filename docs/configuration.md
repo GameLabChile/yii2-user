@@ -51,7 +51,7 @@ If this option is to `true`, users will be able to recovery their forgotten pass
 
 ---
 
-#### emailChangingStrategy (Type: `integer`, Default value: `\dektrium\user\Module::STRATEGY_DEFAULT`)
+#### emailChangingStrategy (Type: `integer`, Default value: `\gamelab\user\Module::STRATEGY_DEFAULT`)
 
 When user tries change his password, there are three ways how this change will happen:
 
@@ -118,7 +118,7 @@ The configuration should be applied in your main configuration file:
 'modules' => [
     ...
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'gamelab\user\Module',
         'enableUnconfirmedLogin' => true,
         'confirmWithin' => 21600,
         'cost' => 12,

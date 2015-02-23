@@ -1,17 +1,17 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace gamelab\user\controllers;
 
-use dektrium\user\Finder;
+use gamelab\user\Finder;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
@@ -19,7 +19,7 @@ use yii\web\NotFoundHttpException;
 /**
  * ProfileController shows users profiles.
  *
- * @property \dektrium\user\Module $module
+ * @property \gamelab\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */

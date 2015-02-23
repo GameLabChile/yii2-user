@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user;
+namespace gamelab\user;
 
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use gamelab\user\models\Token;
+use gamelab\user\models\User;
 use yii\base\Component;
 
 /**
@@ -23,7 +23,7 @@ use yii\base\Component;
 class Mailer extends Component
 {
     /** @var string */
-    public $viewPath = '@dektrium/user/views/mail';
+    public $viewPath = '@gamelab/user/views/mail';
 
     /** @var string|array */
     public $sender = 'no-reply@example.com';

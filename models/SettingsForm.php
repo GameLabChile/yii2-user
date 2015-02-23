@@ -1,19 +1,19 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace gamelab\user\models;
 
-use dektrium\user\helpers\Password;
-use dektrium\user\Mailer;
-use dektrium\user\Module;
+use gamelab\user\helpers\Password;
+use gamelab\user\Mailer;
+use gamelab\user\Module;
 use yii\base\Model;
 use yii\base\NotSupportedException;
 

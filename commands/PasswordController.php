@@ -1,24 +1,24 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\commands;
+namespace gamelab\user\commands;
 
-use dektrium\user\Finder;
+use gamelab\user\Finder;
 use yii\console\Controller;
 use yii\helpers\Console;
 
 /**
  * Updates user's password.
  *
- * @property \dektrium\user\Module $module
+ * @property \gamelab\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */

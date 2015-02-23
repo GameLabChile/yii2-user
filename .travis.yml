@@ -9,7 +9,7 @@ install:
   - composer install --prefer-dist --dev
   - composer require --dev "codeception/codeception:2.0.*@dev"
 before_script:
-  - mysql -e 'create database dektrium_test;'
+  - mysql -e 'create database gamelab_test;'
   - cd tests
   - sed -i 's/\/..\/..\/..\/..\/..\//\/..\/..\//g' codeception/_bootstrap.php
   - php codeception/bin/yii migrate/up --interactive=0

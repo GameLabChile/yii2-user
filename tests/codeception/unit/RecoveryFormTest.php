@@ -1,9 +1,9 @@
 <?php
 
-namespace dektrium\user\tests;
+namespace gamelab\user\tests;
 
 use Codeception\Specify;
-use dektrium\user\models\RecoveryForm;
+use gamelab\user\models\RecoveryForm;
 use tests\codeception\fixtures\UserFixture;
 use tests\codeception\fixtures\TokenFixture;
 use yii\codeception\TestCase;

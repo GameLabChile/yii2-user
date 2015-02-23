@@ -1,20 +1,20 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace gamelab\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\RegistrationForm;
-use dektrium\user\models\ResendForm;
-use dektrium\user\models\User;
+use gamelab\user\Finder;
+use gamelab\user\models\RegistrationForm;
+use gamelab\user\models\ResendForm;
+use gamelab\user\models\User;
 use yii\base\Model;
 use yii\web\Controller;
 use yii\filters\AccessControl;
@@ -26,7 +26,7 @@ use yii\widgets\ActiveForm;
  * RegistrationController is responsible for all registration process, which includes registration of a new account,
  * resending confirmation tokens, email confirmation and registration via social networks.
  *
- * @property \dektrium\user\Module $module
+ * @property \gamelab\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */

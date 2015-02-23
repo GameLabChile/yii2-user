@@ -7,7 +7,7 @@ and easy three-step process.
 Step 1: Download Yii2-user using composer
 -----------------------------------------
 
-Add `"dektrium/yii2-user": "0.9.*@dev"` to the require section of your **composer.json** file and run
+Add `"gamelab/yii2-user": "0.9.*@dev"` to the require section of your **composer.json** file and run
 `composer update` to download and install Yii2-user.
 
 Step 2: Configure your application
@@ -20,7 +20,7 @@ Add following lines to your main configuration file:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'gamelab\user\Module',
     ],
 ],
 ```
@@ -35,13 +35,13 @@ applying
 the migrations:
 
 ```bash
-$ php yii migrate/up --migrationPath=@vendor/dektrium/yii2-user/migrations
+$ php yii migrate/up --migrationPath=@vendor/gamelab/yii2-user/migrations
 ```
 
 FAQ
 ---
 
-**Installation failed. There are no files in `vendor/dektrium/yii2-user`**
+**Installation failed. There are no files in `vendor/gamelab/yii2-user`**
 
 *Try removing Yii2-user version constraint from composer.json, then run `composer update`. After composer finish
  removing of Yii2-user, re-add version constraint and `composer update` again.*

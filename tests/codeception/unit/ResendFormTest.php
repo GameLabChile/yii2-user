@@ -1,8 +1,8 @@
 <?php
 
-namespace dektrium\user\tests;
+namespace gamelab\user\tests;
 
-use dektrium\user\models\ResendForm;
+use gamelab\user\models\ResendForm;
 use tests\codeception\fixtures\UserFixture;
 use yii\codeception\TestCase;
 

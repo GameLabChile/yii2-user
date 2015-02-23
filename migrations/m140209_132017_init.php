@@ -1,16 +1,16 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
 use yii\db\Schema;
-use dektrium\user\migrations\Migration;
+use gamelab\user\migrations\Migration;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com
@@ -23,6 +23,10 @@ class m140209_132017_init extends Migration
             'id'                   => Schema::TYPE_PK,
             'username'             => Schema::TYPE_STRING . '(25) NOT NULL',
             'email'                => Schema::TYPE_STRING . '(255) NOT NULL',
+            'nombre'               => Schema::TYPE_STRING . '(255) NOT NULL',
+            'apellido'             => Schema::TYPE_STRING . '(255) NOT NULL',
+            'admin'                => Schema::TYPE_BOOLEAN. ' NOT NULL',
+            'suspendido'           => Schema::TYPE_BOOLEAN. ' NOT NULL'
             'password_hash'        => Schema::TYPE_STRING . '(60) NOT NULL',
             'auth_key'             => Schema::TYPE_STRING . '(32) NOT NULL',
             'confirmation_token'   => Schema::TYPE_STRING . '(32)',

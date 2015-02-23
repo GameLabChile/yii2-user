@@ -1,10 +1,10 @@
 <?php
 
-namespace dektrium\user\tests;
+namespace gamelab\user\tests;
 
 use Codeception\Specify;
 use
-    dektrium\user\models\LoginForm;
+    gamelab\user\models\LoginForm;
 use tests\codeception\fixtures\UserFixture;
 use yii\codeception\TestCase;
 

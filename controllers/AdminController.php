@@ -1,20 +1,20 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace gamelab\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\User;
-use dektrium\user\models\UserSearch;
-use dektrium\user\Module;
+use gamelab\user\Finder;
+use gamelab\user\models\User;
+use gamelab\user\models\UserSearch;
+use gamelab\user\Module;
 use Yii;
 use yii\base\ExitException;
 use yii\base\Model;
@@ -181,14 +181,14 @@ class AdminController extends Controller
     }
 
     /**
-     * If "dektrium/yii2-rbac" extension is installed, this page displays form
+     * If "gamelab/yii2-rbac" extension is installed, this page displays form
      * where user can assign multiple auth items to user.
      * @param  integer $id
      * @return string
      */
     public function actionAssignments($id)
     {
-        if (!isset(Yii::$app->extensions['dektrium/yii2-rbac'])) {
+        if (!isset(Yii::$app->extensions['gamelab/yii2-rbac'])) {
             throw new NotFoundHttpException;
         }
         Url::remember('', 'actions-redirect');

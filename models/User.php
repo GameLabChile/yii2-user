@@ -1,20 +1,20 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace gamelab\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\helpers\Password;
-use dektrium\user\Mailer;
-use dektrium\user\Module;
+use gamelab\user\Finder;
+use gamelab\user\helpers\Password;
+use gamelab\user\Mailer;
+use gamelab\user\Module;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
@@ -58,13 +58,13 @@ class User extends ActiveRecord implements IdentityInterface
     /** @var string Plain password. Used for model validation. */
     public $password;
 
-    /** @var \dektrium\user\Module */
+    /** @var \gamelab\user\Module */
     protected $module;
 
-    /** @var \dektrium\user\Mailer */
+    /** @var \gamelab\user\Mailer */
     protected $mailer;
 
-    /** @var \dektrium\user\Finder */
+    /** @var \gamelab\user\Finder */
     protected $finder;
 
     /** @inheritdoc */
@@ -141,6 +141,10 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             'username'          => \Yii::t('user', 'Username'),
+            'nombre'            => \yii::t('user', 'nombre'),
+            'apellido'          => \yii::t('user', 'apellido'),
+            'admin'             => \yii::t('user', 'admin'),
+            'suspendido'        => \yii::t('user', 'suspendido'),
             'email'             => \Yii::t('user', 'Email'),
             'registration_ip'   => \Yii::t('user', 'Registration ip'),
             'unconfirmed_email' => \Yii::t('user', 'New email'),
@@ -180,6 +184,12 @@ class User extends ActiveRecord implements IdentityInterface
             ['username', 'string', 'min' => 3, 'max' => 25],
             ['username', 'unique'],
             ['username', 'trim'],
+
+            // nombre rules
+            ['nombre','required', 'on' => ['register', 'connect', 'create', 'update']],
+            ['nombre','match', 'pattern' => '/^[a-zA-Z]\w+$/'],
+            ['nombre', 'string', 'min' => 3, 'max' => 25],
+
 
             // email rules
             ['email', 'required', 'on' => ['register', 'connect', 'create', 'update']],

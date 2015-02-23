@@ -28,7 +28,7 @@ property.
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'gamelab\user\Module',
         'components' => [
             'manager' => [
                 'User' => 'your\model\User',
@@ -45,7 +45,7 @@ property.
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'gamelab\user\Module',
         'modelMap' => [
             'User' => 'your\model\User',
             'Profile' => 'your\model\Profile',
@@ -63,7 +63,7 @@ mailer configuration [here](docs/mailer.md).
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'gamelab\user\Module',
         'components' => [
             'mailer' => [
                 'sender' => 'noreply@myhost.com',
@@ -78,7 +78,7 @@ mailer configuration [here](docs/mailer.md).
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'gamelab\user\Module',
         'mailer' => [
             'sender' => 'noreply@myhost.com',
         ],

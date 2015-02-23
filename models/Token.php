@@ -1,15 +1,15 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Gamelab project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Gamelab project <http://github.com/gamelab/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace gamelab\user\models;
 
 use yii\db\ActiveRecord;
 use yii\helpers\Url;
@@ -34,7 +34,7 @@ class Token extends ActiveRecord
     const TYPE_CONFIRM_NEW_EMAIL = 2;
     const TYPE_CONFIRM_OLD_EMAIL = 3;
 
-    /** @var \dektrium\user\Module */
+    /** @var \gamelab\user\Module */
     protected $module;
 
     /** @inheritdoc */
