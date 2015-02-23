@@ -3,7 +3,7 @@
     "description": "Modified version of the yii2-user extension for Yii2 made by gamelab (Dmitry Erofeev)",
     "keywords": ["yii2", "yii2-user", "user management", "gamelab", "gamelab"],
     "type": "yii2-extension",
-    "license": "",
+    "license": "MIT",
     "authors": [
         {
             "name": "GameLab",
