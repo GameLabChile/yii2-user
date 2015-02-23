@@ -1,19 +1,14 @@
 {
-    "name": "dektrium/yii2-user",
-    "description": "Flexible user registration and authentication module for Yii2",
-    "keywords": ["yii2", "yii2-user", "user management", "dektrium"],
+    "name": "gamelab/yii2-user",
+    "description": "Modified version of the yii2-user extension for Yii2 made by dektrium (Dmitry Erofeev)",
+    "keywords": ["yii2", "yii2-user", "user management", "dektrium", "gamelab"],
     "type": "yii2-extension",
-    "license": "MIT",
-    "support": {
-        "issues": "https://github.com/dektrium/yii2-user/issues?state=open",
-        "forum": "https://gitter.im/dektrium/yii2-user",
-        "source": "https://github.com/dektrium/yii2-user"
-    },
+    "license": "",
     "authors": [
         {
-            "name": "Dmitry Erofeev",
-            "email": "dmeroff@gmail.com",
-            "homepage": "http://dmeroff.ru"
+            "name": "GameLab",
+            "email": "contacto@gamelab.cl",
+            "homepage": "http://gamelab.cl"
         }
     ],
     "minimum-stability": "dev",
